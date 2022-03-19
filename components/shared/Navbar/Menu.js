@@ -25,4 +25,6 @@ const Menu = forwardRef(({ handleMenuClose }, ref) => (
   </StyledMenu>
 ))
 
+Menu.displayName = 'Menu'
+
 export default Menu
