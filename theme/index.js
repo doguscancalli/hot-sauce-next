@@ -7,6 +7,7 @@ export const theme = {
     laptop: '1024px',
     laptopL: '1440px',
     desktop: '1536px',
+    desktopM: '1920px',
     desktopL: '2560px',
   },
   color: {

@@ -16,18 +16,20 @@ export const StyledCurvedShapeTop = styled.div`
   align-items: center;
   overflow: hidden;
   z-index: -1;
+  margin-bottom: -2px;
 
   svg:nth-child(1) {
-    width: 1920px;
+    width: 2560px;
     position: absolute;
-    top: 90px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   svg:nth-child(2) {
-    width: 1920px;
-    height: 310px;
+    width: 2560px;
+    height: 420px;
+
     position: absolute;
     top: 0;
     left: 50%;
@@ -38,6 +40,18 @@ export const StyledCurvedShapeTop = styled.div`
       font-family: ${theme.font.family.heading};
       font-size: ${theme.font.size.xxl};
       fill: ${theme.color.yellow};
+    }
+  }
+
+  @media (max-width: ${theme.breakpoint.desktopM}) {
+    svg:nth-child(1) {
+      width: 1920px;
+      top: 90px;
+    }
+
+    svg:nth-child(2) {
+      width: 1920px;
+      height: 310px;
     }
   }
 
@@ -108,15 +122,24 @@ export const StyledRecipe = styled.li`
 export const StyledCurvedShapeBottom = styled.div`
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 400px;
   z-index: -1;
+  margin-top: -2px;
 
   svg {
-    width: 1920px;
+    width: 2560px;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @media (max-width: ${theme.breakpoint.desktopM}) {
+    height: 300px;
+
+    svg {
+      width: 1920px;
+    }
   }
 
   @media (max-width: ${theme.breakpoint.mobileL}) {
